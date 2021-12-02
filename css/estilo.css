@@ -1,0 +1,591 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&family=Raleway:wght@200;400;500;600;700&display=swap");
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 25px;
+  background-color: #bec7f5; }
+  header ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    justify-content: center;
+    margin: 0px; }
+    header ul li {
+      justify-self: center;
+      font-family: "Raleway", sans-serif;
+      font-size: 22px;
+      font-weight: 500;
+      list-style-type: none;
+      padding: 0px 22px;
+      height: 40px; }
+    header ul li:hover {
+      background-color: #899af0;
+      width: 100%;
+      text-align: center; }
+      header ul li:hover a {
+        color: white; }
+
+/*-----------------------------Media Queries Header---------------------------------*/
+@media only screen and (max-width: 1360px) {
+  header ul li {
+    font-size: 20px; } }
+
+@media only screen and (max-width: 1252px) {
+  header ul li {
+    font-size: 18px; } }
+
+@media only screen and (max-width: 932px) {
+  header {
+    padding: 0px; }
+    header ul {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(5, 1fr); }
+      header ul li {
+        margin: 10px 0px; } }
+
+@media only screen and (max-width: 424px) {
+  header ul {
+    padding: 0px; } }
+
+footer {
+  border-top: 2px solid black;
+  padding-top: 20px;
+  margin-top: 70px;
+  background-color: #bec7f5; }
+  footer .footer__img {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px; }
+  footer .footer__img--ancho {
+    width: 220px; }
+  footer .footer__nav {
+    margin: 50px;
+    text-align: center;
+    font-size: 22px;
+    font-family: "Raleway", sans-serif;
+    list-style-type: none; }
+    footer .footer__nav ul {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: 1fr;
+      justify-content: center;
+      margin: 0px;
+      padding: 0px;
+      list-style-type: none;
+      height: 40px; }
+      footer .footer__nav ul li:hover {
+        background-color: #899af0;
+        text-align: center; }
+        footer .footer__nav ul li:hover a {
+          color: white; }
+  footer .footer__logos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "none ul p"; }
+  footer .footer__logosUl {
+    grid-area: ul;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: 1fr;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px; }
+    footer .footer__logosUl li {
+      justify-self: center;
+      list-style-type: none; }
+      footer .footer__logosUl li img {
+        width: 25px;
+        height: 25px; }
+  footer .footer__logosP {
+    grid-area: p;
+    justify-self: flex-end;
+    align-self: flex-end;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif; }
+    footer .footer__logosP a:hover {
+      color: #f8f5f5; }
+
+/*-----------------------------Media Queries Footer---------------------------------*/
+@media only screen and (max-width: 1360px) {
+  footer .footer__nav {
+    font-size: 20px; } }
+
+@media only screen and (max-width: 1152px) {
+  footer .footer__nav {
+    font-size: 18px; } }
+
+@media only screen and (max-width: 932px) {
+  footer .footer__img--ancho {
+    width: 180px;
+    margin-bottom: 60px; }
+  footer .footer__nav {
+    display: none; }
+  footer .footer__logosP {
+    display: none; } }
+
+.portada__index {
+  background-image: url(../imagenes/portada2.jpg); }
+
+.seccion {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-row-gap: 50px; }
+
+.seccion__tarjeta {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-self: center;
+  padding: 20px;
+  border: 10px solid #c6cef8;
+  font-family: 'Raleway',sans-serif;
+  background-color: white; }
+
+.seccion__img--dimension {
+  width: 450px;
+  height: 450px; }
+
+.tarjeta__cuerpo--padding {
+  padding: 10px; }
+
+.tarjeta__cuerpo--titulo {
+  text-align: center;
+  padding: 10px;
+  font-size: 24px; }
+
+.tarjeta__imglist {
+  list-style-image: url("../imagenes/diamante.png"); }
+
+.tarjeta__btn--posc {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  .tarjeta__btn--posc a {
+    margin: 10px 10px; }
+
+/*-----------------------------Media Queries Index---------------------------------*/
+@media only screen and (max-width: 1536px) {
+  .seccion {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-row-gap: 50px; } }
+
+@media only screen and (max-width: 1032px) {
+  .seccion {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-row-gap: 50px; }
+  .seccion__tarjeta {
+    height: 630px;
+    width: 510px; }
+  .seccion__img--dimension {
+    align-self: center;
+    width: 350px;
+    height: 350px; } }
+
+@media only screen and (max-width: 876px) {
+  .seccion__tarjeta {
+    height: 650px;
+    width: 500px; } }
+
+@media only screen and (max-width: 512px) {
+  .seccion__tarjeta {
+    height: 650px;
+    width: 400px; } }
+
+@media only screen and (max-width: 424px) {
+  .seccion__tarjeta {
+    height: 550px;
+    width: 300px; }
+  .seccion__img--dimension {
+    align-self: center;
+    width: 250px;
+    height: 250px; }
+  .tarjeta__cuerpo--padding {
+    font-size: 16px; }
+  .tarjeta__cuerpo--titulo {
+    text-align: center;
+    padding: 6px;
+    font-size: 18px; }
+  .tarjeta__imglist {
+    font-size: 12px; }
+  .btn {
+    font-size: 12px; } }
+
+.portada__prod {
+  background-image: url(../imagenes/portRoj.jpg); }
+
+.grid__prod {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-row-gap: 50px;
+  justify-content: space-evenly;
+  margin: 0px; }
+  .grid__prod .div__prod {
+    justify-self: center;
+    text-align: center;
+    margin: 45px;
+    padding: 30px;
+    font-size: 35px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    background-color: #fffefe;
+    border: 12px solid #c6cef8; }
+    .grid__prod .div__prod p {
+      padding-top: 20px; }
+      .grid__prod .div__prod p a:hover {
+        color: black;
+        text-decoration: underline; }
+    .grid__prod .div__prod .div__prod--dimensionimg {
+      width: 450px;
+      height: 450px; }
+
+/*-----------------------------Media Queries Productos---------------------------------*/
+@media only screen and (max-width: 1204px) {
+  .grid__prod {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr); }
+    .grid__prod .div__prod {
+      margin: 0px; } }
+
+@media only screen and (max-width: 1032px) {
+  .grid__prod .div__prod {
+    margin: 0px;
+    font-size: 25px; }
+    .grid__prod .div__prod .div__prod--dimensionimg {
+      width: 350px;
+      height: 350px; } }
+
+@media only screen and (max-width: 512px) {
+  .grid__prod .div__prod {
+    margin: 0px;
+    font-size: 20px; }
+    .grid__prod .div__prod .div__prod--dimensionimg {
+      width: 250px;
+      height: 250px; } }
+
+@media only screen and (max-width: 424px) {
+  .grid__prod .div__prod {
+    margin: 0px;
+    font-size: 18px; }
+    .grid__prod .div__prod .div__prod--dimensionimg {
+      width: 230px;
+      height: 230px; } }
+
+.portada__faq {
+  background-image: url(../imagenes/portAma.jpg); }
+
+.accordion-item {
+  border: 1px solid black;
+  background-color: #d3daff;
+  font-family: "Raleway", sans-serif; }
+  .accordion-item .accordion-button {
+    background-color: #bec7f5;
+    font-size: 18px;
+    font-weight: 500; }
+  .accordion-item .accordion-button:not(.collapsed) {
+    color: black; }
+
+/*-----------------------------Media Queries FAQ---------------------------------*/
+.portada__cont {
+  background-image: url(../imagenes/portCel.jpg); }
+
+.div__consulta {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  margin-top: 50px;
+  text-decoration: underline; }
+
+.lista__contacto {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0px;
+  padding: 0px;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  list-style-type: none; }
+  .lista__contacto li {
+    display: inline;
+    align-self: baseline;
+    padding: 0px 30px; }
+  .lista__contacto li a:hover {
+    color: white; }
+  .lista__contacto a {
+    padding-left: 10px; }
+
+/*-----------------------------Media Queries Contacto---------------------------------*/
+@media only screen and (max-width: 658px) {
+  .div__consulta {
+    font-size: 18px; }
+  .lista__contacto {
+    font-size: 16px; } }
+
+@media only screen and (max-width: 512px) {
+  .lista__contacto {
+    flex-direction: column; }
+    .lista__contacto li {
+      align-self: center;
+      margin: 10px 10px; } }
+
+.portada__sm {
+  background-image: url(../imagenes/portRosa.jpg); }
+
+.seccion__sm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Raleway", sans-serif; }
+  .seccion__sm .seccion__sm--propiedadesfuente {
+    border: 12px solid #c6cef8;
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    width: 800px;
+    margin-bottom: 60px;
+    padding: 10px;
+    background-color: white; }
+  .seccion__sm img {
+    width: 450px;
+    height: 600px;
+    padding: 20px; }
+  .seccion__sm .seccion__sm--decoration {
+    font-size: 35px;
+    font-weight: 600;
+    text-decoration: underline;
+    background-color: #bec7f5; }
+
+/*-----------------------------Media Queries Sobre Mi---------------------------------*/
+@media only screen and (max-width: 876px) {
+  .seccion__sm .seccion__sm--propiedadesfuente {
+    font-size: 15px;
+    width: auto; } }
+
+@media only screen and (max-width: 450px) {
+  .seccion__sm .seccion__sm--propiedadesfuente {
+    font-size: 12px; }
+  .seccion__sm img {
+    width: 320px;
+    height: 450px; } }
+
+.div__bread {
+  margin: 0 0 50px 10px; }
+  .div__bread li {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    text-decoration: underline; }
+  .div__bread li a:hover {
+    color: white; }
+
+.seccion__cat {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-row-gap: 50px; }
+  .seccion__cat .seccion__tarjeta {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    justify-self: center;
+    padding: 20px;
+    border: 10px solid #c6cef8;
+    font-family: 'Raleway',sans-serif;
+    background-color: white; }
+    .seccion__cat .seccion__tarjeta .tarjeta__cuerpo--centrar {
+      align-self: center; }
+    .seccion__cat .seccion__tarjeta .tarjeta__cuerpo--titulo {
+      text-align: center;
+      padding: 10px;
+      font-size: 24px;
+      font-weight: 500; }
+    .seccion__cat .seccion__tarjeta .tarjeta__btn--posc {
+      padding-top: 50px; }
+
+.portada__anillos {
+  background-image: url(../imagenes/port-anillos.jpg);
+  background-size: cover;
+  background-position: center; }
+
+.portada__aros {
+  background-image: url(../imagenes/port-aros.jpg);
+  background-size: cover;
+  background-position: center; }
+
+.portada__coll {
+  background-image: url(../imagenes/port-coll.jpg);
+  background-size: cover;
+  background-position: center; }
+
+.portada__pulseras {
+  background-image: url(../imagenes/port-pul.jpg);
+  background-size: cover;
+  background-position: center; }
+
+/*-----------------------------Media Queries Catalogo---------------------------------*/
+@media only screen and (max-width: 1652px) {
+  .seccion__cat {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr); } }
+
+@media only screen and (max-width: 1040px) {
+  .seccion__cat .seccion__tarjeta {
+    flex-direction: column;
+    width: 550px;
+    height: 700px; } }
+
+@media only screen and (max-width: 876px) {
+  .seccion__cat .seccion__tarjeta {
+    height: 700px;
+    width: 500px; } }
+
+@media only screen and (max-width: 512px) {
+  .seccion__cat .seccion__tarjeta {
+    height: 680px;
+    width: 400px; }
+    .seccion__cat .seccion__tarjeta .tarjeta__cuerpo--titulo {
+      font-size: 20px; }
+  .seccion__cat .seccion__img--dimension {
+    align-self: center;
+    width: 300px;
+    height: 280px; } }
+
+@media only screen and (max-width: 424px) {
+  .seccion__cat .seccion__tarjeta {
+    width: 300px;
+    height: 550px; }
+    .seccion__cat .seccion__tarjeta .tarjeta__cuerpo--titulo {
+      font-size: 18px; }
+    .seccion__cat .seccion__tarjeta .tarjeta__btn--posc {
+      padding-top: 0px; }
+  .seccion__cat .seccion__img--dimension {
+    align-self: center;
+    width: 250px;
+    height: 250px; } }
+
+* {
+  margin: 0px;
+  padding: 0px; }
+
+body {
+  background-color: #d3daff; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 85px;
+  margin: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  h1 a {
+    font-weight: 600; }
+  h1 a:hover {
+    color: black; }
+
+.portadas {
+  display: flex;
+  width: auto;
+  height: 45rem;
+  font-family: "Raleway", sans-serif;
+  color: white;
+  margin-bottom: 40px;
+  border: 2px solid black;
+  background-size: cover;
+  background-position: center; }
+  .portadas p {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: 900;
+    border: 4px solid white;
+    margin: auto;
+    width: 30%; }
+
+h2 {
+  color: #000000;
+  text-decoration: underline;
+  font-size: 42px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: 10px solid #c6cef8;
+  padding: 30px;
+  font-family: "Raleway", sans-serif;
+  background-color: #bec7f5; }
+
+/*-----------------------------Media Queries Estilo---------------------------------*/
+@media only screen and (max-width: 1458px) {
+  .portadas p {
+    font-size: 45px; } }
+
+@media only screen and (max-width: 1360px) {
+  h1 {
+    font-size: 80px; }
+  h2 {
+    font-size: 38px; }
+  .portadas p {
+    font-size: 40px; }
+  .portada__index, .portada__prod, .portada__sm, .portada__faq, .portada__cont {
+    width: auto;
+    height: 40rem; }
+  .portada__anillos, .portada__coll, .portada__pulseras, .portada__aros {
+    width: auto;
+    height: 40rem; } }
+
+@media only screen and (max-width: 1154px) {
+  h2 {
+    font-size: 32px; }
+  .portadas p {
+    font-size: 30px; }
+  .portada__index, .portada__prod, .portada__sm, .portada__faq, .portada__cont {
+    width: auto;
+    height: 30rem; }
+  .portada__anillos, .portada__coll, .portada__pulseras, .portada__aros {
+    width: auto;
+    height: 30rem; } }
+
+@media only screen and (max-width: 932px) {
+  h1 {
+    font-size: 75px;
+    padding-bottom: 10px; }
+  h2 {
+    font-size: 28px; }
+  .portada__index, .portada__prod, .portada__sm, .portada__faq, .portada__cont {
+    width: auto;
+    height: 20rem; }
+  .portada__anillos, .portada__coll, .portada__pulseras, .portada__aros {
+    width: auto;
+    height: 20rem; } }
+
+@media only screen and (max-width: 876px) {
+  .portadas p {
+    font-size: 20px;
+    text-align: center; } }
+
+@media only screen and (max-width: 424px) {
+  h1 {
+    font-size: 70px;
+    padding: 0px; }
+  h2 {
+    font-size: 25px; }
+  .portadas p {
+    font-size: 18px; } }
+
+@media only screen and (max-width: 360px) {
+  h1 {
+    font-size: 50px; }
+  h2 {
+    font-size: 20px; } }

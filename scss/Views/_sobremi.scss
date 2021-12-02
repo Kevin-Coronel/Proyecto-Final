@@ -1,0 +1,60 @@
+.portada__sm{
+    background-image: url(../imagenes/portRosa.jpg);
+}
+
+.seccion__sm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: $fuente;
+ 
+    .seccion__sm--propiedadesfuente{
+        border: 12px solid rgb(198, 206, 248);
+        margin-top:30px;
+        font-size: 18px;
+        font-weight: 500;
+        width: 800px;
+        margin-bottom: 60px;
+        padding: 10px;
+        background-color: white;
+    }
+
+    img{
+        width: 450px;
+        height: 600px;
+        padding: 20px;
+    }
+
+    .seccion__sm--decoration{
+        font-size: 35px;
+        font-weight: 600;
+        text-decoration: underline;
+        background-color: $color_secundario;
+    }
+    
+}
+
+/*-----------------------------Media Queries Sobre Mi---------------------------------*/
+@media only screen and (max-width:876px){
+    .seccion__sm{
+        .seccion__sm--propiedadesfuente{
+            font-size: 15px;
+            width: auto;
+        }
+    }
+}
+
+@media only screen and (max-width:450px){
+    .seccion__sm{
+        .seccion__sm--propiedadesfuente{
+            font-size: 12px;
+        }
+
+        img{
+            width: 320px;
+            height: 450px;
+        }
+    }
+    
+}

@@ -1,0 +1,22 @@
+.portada__faq{
+    background-image: url(../imagenes/portAma.jpg);
+}
+
+.accordion-item{
+    border: 1px solid black;
+    background-color: rgb(211, 218, 255);
+    font-family: $fuente;
+    
+
+    .accordion-button{
+        background-color: $color_secundario;
+        font-size: 18px;
+        font-weight: 500;               
+    }
+    
+    .accordion-button:not(.collapsed){
+        color: black;
+    }
+}
+
+/*-----------------------------Media Queries FAQ---------------------------------*/

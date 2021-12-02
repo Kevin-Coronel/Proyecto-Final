@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>http://www.rowena-accesorios.com/index.html</loc>
+    <lastmod>2021-11-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>http://www.rowena-accesorios.com/productos.html</loc>
+    <lastmod>2021-11-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>http://www.rowena-accesorios.com/anillos.html</loc>
+    <lastmod>2021-11-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>http://www.rowena-accesorios.com/aros.html</loc>
+    <lastmod>2021-11-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>http://www.rowena-accesorios.com/collares.html</loc>
+    <lastmod>2021-11-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>http://www.rowena-accesorios.com/pulseras.html</loc>
+    <lastmod>2021-11-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>http://www.rowena-accesorios.com/contacto.html</loc>
+    <lastmod>2021-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+    <url>
+    <loc>http://www.rowena-accesorios.com/faq.html</loc>
+    <lastmod>2021-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>http://www.rowena-accesorios.com/sobre-mi.html</loc>
+    <lastmod>2021-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+</urlset>

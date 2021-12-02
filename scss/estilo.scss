@@ -1,0 +1,196 @@
+$fuente: 'Raleway', sans-serif;
+$color_principal: rgb(211, 218, 255);
+$color_secundario: rgb(190, 199, 245);
+$color_bordes: rgb(198, 206, 248);
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&family=Raleway:wght@200;400;500;600;700&display=swap');
+@import "Layout/header";
+@import "Layout/footer";
+@import "Views/index";
+@import "Views/productos";
+@import "Views/faq";
+@import "Views/contacto";
+@import "Views/sobremi";
+@import "Catalogo/catprod";
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: $color_principal;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 85px; 
+    margin: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    a{
+        font-weight: 600;
+    } 
+    
+    a:hover{
+        color: black;
+    }
+    
+}
+
+.portadas{
+    display: flex;
+    width:auto;
+    height: 45rem;
+    font-family: $fuente;
+    color: rgb(255, 255, 255);
+    margin-bottom: 40px;
+    border: 2px solid black;
+    background-size:cover;
+    background-position: center;
+
+    p{
+        display: flex;
+        justify-content:center;
+        font-size: 50px;
+        font-weight: 900;
+        border: 4px solid rgb(255, 255, 255);
+        margin: auto;
+        width: 30%;
+    }
+}
+
+h2{
+    color: #000000;
+    text-decoration: underline;
+    font-size: 42px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 10px solid $color_bordes;
+    padding: 30px;
+    font-family: $fuente;
+    background-color: $color_secundario;
+}
+
+/*-----------------------------Media Queries Estilo---------------------------------*/
+@media only screen and (max-width:1458px){
+    .portadas{
+        p{
+            font-size: 45px;
+        }
+    }
+}
+
+@media only screen and (max-width:1360px){
+    h1{
+        font-size: 80px;     
+    }
+
+    h2{
+        font-size: 38px;
+    }
+
+    .portadas{
+        p{
+            font-size: 40px;
+        }
+    }
+
+    .portada__index, .portada__prod, .portada__sm, .portada__faq , .portada__cont{        
+        width: auto;
+        height: 40rem;
+    }
+
+    .portada__anillos, .portada__coll, .portada__pulseras, .portada__aros{
+        width: auto;
+        height: 40rem;
+    }
+}
+
+@media only screen and (max-width:1154px){
+    h2{
+        font-size: 32px;
+    }
+
+    .portadas{
+        p{
+            font-size: 30px;
+        }
+    }
+
+    .portada__index, .portada__prod, .portada__sm, .portada__faq, .portada__cont{        
+        width: auto;
+        height: 30rem;
+    }
+
+    .portada__anillos, .portada__coll, .portada__pulseras, .portada__aros{
+        width: auto;
+        height: 30rem;
+    }
+}
+
+@media only screen and (max-width:932px){
+    h1{
+        font-size: 75px; 
+        padding-bottom: 10px;
+    }
+
+    h2{
+        font-size: 28px;
+    }
+
+    .portada__index, .portada__prod, .portada__sm, .portada__faq, .portada__cont{        
+        width: auto;
+        height: 20rem;
+    }
+
+    .portada__anillos, .portada__coll, .portada__pulseras, .portada__aros{
+        width: auto;
+        height: 20rem;
+    }
+}
+
+@media only screen and (max-width:876px){
+    .portadas{
+        p{
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+}
+
+@media only screen and (max-width:424px){
+    h1{
+        font-size: 70px;
+        padding: 0px;
+    }
+
+    h2{
+        font-size: 25px;
+    }
+
+    .portadas{
+        p{
+            font-size: 18px;
+           }
+    }
+}
+
+@media only screen and (max-width:360px){
+    h1{
+        font-size: 50px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+}

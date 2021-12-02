@@ -1,0 +1,143 @@
+.div__bread{
+    margin: 0 0 50px 10px;
+
+    li{
+        font-family: $fuente;
+        font-size: 16px;
+        text-decoration: underline;
+    }
+
+    li a:hover{
+        color: white;
+    }
+}
+
+.seccion__cat{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 50px;
+
+    .seccion__tarjeta{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        justify-self: center;
+        padding: 20px;
+        border: 10px solid $color_bordes;
+        font-family: 'Raleway',sans-serif;
+        background-color: white;
+
+        .tarjeta__cuerpo--centrar{
+            align-self: center;
+        }
+
+        .tarjeta__cuerpo--titulo{
+            text-align: center;
+            padding: 10px;
+            font-size: 24px;
+            font-weight: 500;
+        }
+
+        .tarjeta__btn--posc {
+            padding-top: 50px;
+        }
+    }
+}
+
+.portada__anillos{
+    background-image: url(../imagenes/port-anillos.jpg);
+    background-size:cover;
+    background-position: center;
+}
+
+.portada__aros{
+    background-image: url(../imagenes/port-aros.jpg);
+    background-size:cover;
+    background-position: center;
+}
+
+.portada__coll{
+    background-image: url(../imagenes/port-coll.jpg);
+    background-size:cover;
+    background-position: center;
+}
+
+.portada__pulseras{
+    background-image: url(../imagenes/port-pul.jpg);
+    background-size:cover;
+    background-position: center;
+}
+
+/*-----------------------------Media Queries Catalogo---------------------------------*/
+
+@media only screen and (max-width:1652px){
+    .seccion__cat{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
+
+@media only screen and (max-width:1040px){
+    .seccion__cat{
+        .seccion__tarjeta{
+            flex-direction: column;
+            width: 550px;
+            height: 700px;
+        }
+    }   
+}
+
+@media only screen and (max-width:876px){
+    .seccion__cat{
+        .seccion__tarjeta{
+            height: 700px;
+            width: 500px;
+        }
+    }
+}
+
+@media only screen and (max-width:512px){
+    .seccion__cat{
+        .seccion__tarjeta{
+            height: 680px;
+            width: 400px;
+            
+            .tarjeta__cuerpo--titulo{
+                font-size: 20px;
+            }
+        }
+
+
+        .seccion__img--dimension{
+            align-self: center;
+            width: 300px;
+            height: 280px;
+        }
+    }
+}
+
+@media only screen and (max-width:424px){
+    .seccion__cat{
+        
+        .seccion__tarjeta{
+            width: 300px;
+            height: 550px;       
+
+            .tarjeta__cuerpo--titulo{
+                font-size: 18px;
+            }
+
+            .tarjeta__btn--posc {
+                padding-top: 0px;
+            }
+        }
+
+        .seccion__img--dimension{
+            align-self: center;
+            width: 250px;
+            height: 250px;
+        }
+    }
+}

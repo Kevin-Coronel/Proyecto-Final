@@ -1,0 +1,127 @@
+.portada__index{   
+    background-image: url(../imagenes/portada2.jpg);
+}
+
+.seccion{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 50px;
+}
+
+.seccion__tarjeta{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-self: center;
+    padding: 20px;
+    border: 10px solid $color_bordes;
+    font-family: 'Raleway',sans-serif;
+    background-color: white;
+}
+
+.seccion__img--dimension{
+    width: 450px;
+    height: 450px;
+}
+
+.tarjeta__cuerpo--padding{
+    padding: 10px;
+}
+
+.tarjeta__cuerpo--titulo{
+    text-align: center;
+    padding: 10px;
+    font-size: 24px;
+}
+
+.tarjeta__imglist{
+    list-style-image:url("../imagenes/diamante.png");
+}
+
+.tarjeta__btn--posc{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    a{
+        margin: 10px 10px;
+    }
+}
+
+/*-----------------------------Media Queries Index---------------------------------*/
+@media only screen and (max-width:1536px){
+    .seccion{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-row-gap: 50px;
+    }  
+}
+
+@media only screen and (max-width:1032px){
+    .seccion{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-row-gap: 50px;
+    }  
+
+    .seccion__tarjeta{
+        height: 630px;
+        width: 510px;
+    }
+
+    .seccion__img--dimension{
+        align-self: center;
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width:876px){
+    .seccion__tarjeta{
+        height: 650px;
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width:512px){
+    .seccion__tarjeta{
+        height: 650px;
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width:424px){
+    .seccion__tarjeta{
+        height: 550px;
+        width: 300px;
+    }
+
+    .seccion__img--dimension{
+        align-self: center;
+        width: 250px;
+        height: 250px;
+    }
+
+    .tarjeta__cuerpo--padding{
+        font-size: 16px;
+    }
+
+    .tarjeta__cuerpo--titulo{
+        text-align: center;
+        padding: 6px;
+        font-size: 18px;
+    }
+
+    .tarjeta__imglist{
+        font-size: 12px;
+    }
+
+    .btn{
+        font-size: 12px;
+    }
+
+}
+
