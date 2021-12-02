@@ -10,7 +10,8 @@ header {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr;
     justify-content: center;
-    margin: 0px; }
+    margin: 0px;
+    padding: 0px; }
     header ul li {
       justify-self: center;
       font-family: "Raleway", sans-serif;
@@ -126,7 +127,7 @@ footer {
     display: none; } }
 
 .portada__index {
-  background-image: url(../imagenes/portada2.jpg); }
+  background-image: url(../imagenes/portada.jpg); }
 
 .seccion {
   display: grid;
