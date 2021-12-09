@@ -52,11 +52,10 @@ footer{
 
     .footer__logosUl{
         grid-area: ul;
-        display: grid;
-        grid-template-columns: repeat(3, 100px);
-        grid-template-rows: 1fr;
+        display: flex;
+        flex-direction: row;
         justify-content: center;
-        margin: 0px;
+        margin: 10px;
         padding: 0px;
 
         li{
@@ -66,6 +65,7 @@ footer{
             img{
                 width: 25px;
                 height: 25px;
+                margin: 0px 40px;
             }
         }
     }
@@ -73,9 +73,10 @@ footer{
     .footer__logosP{
         grid-area: p;
         justify-self: flex-end;
-        align-self: flex-end;
+        align-self: center;
         font-size: 16px;
         font-family: 'Raleway', sans-serif;
+        margin: 0px 10px;
 
         a:hover{
             color: rgb(248, 245, 245);

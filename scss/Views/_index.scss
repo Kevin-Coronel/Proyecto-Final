@@ -9,7 +9,7 @@
     grid-row-gap: 50px;
 }
 
-.seccion__tarjeta{
+.seccion-tarjeta{
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -20,22 +20,22 @@
     background-color: white;
 }
 
-.seccion__img--dimension{
+.img-dimension{
     width: 450px;
     height: 450px;
 }
 
-.tarjeta__cuerpo--padding{
+.tarjeta-padding{
     padding: 10px;
 }
 
-.tarjeta__cuerpo--titulo{
+.cuerpo-titulo{
     text-align: center;
     padding: 10px;
     font-size: 24px;
 }
 
-.tarjeta__imglist{
+.imglist{
     list-style-image:url("../imagenes/diamante.png");
 }
 
@@ -67,12 +67,12 @@
         grid-row-gap: 50px;
     }  
 
-    .seccion__tarjeta{
+    .seccion-tarjeta{
         height: 630px;
         width: 510px;
     }
 
-    .seccion__img--dimension{
+    .img-dimension{
         align-self: center;
         width: 350px;
         height: 350px;
@@ -80,42 +80,42 @@
 }
 
 @media only screen and (max-width:876px){
-    .seccion__tarjeta{
+    .seccion-tarjeta{
         height: 650px;
         width: 500px;
     }
 }
 
 @media only screen and (max-width:512px){
-    .seccion__tarjeta{
+    .seccion-tarjeta{
         height: 650px;
         width: 400px;
     }
 }
 
 @media only screen and (max-width:424px){
-    .seccion__tarjeta{
+    .seccion-tarjeta{
         height: 550px;
         width: 300px;
     }
 
-    .seccion__img--dimension{
+    .img-dimension{
         align-self: center;
         width: 250px;
         height: 250px;
     }
 
-    .tarjeta__cuerpo--padding{
+    .tarjeta-padding{
         font-size: 16px;
     }
 
-    .tarjeta__cuerpo--titulo{
+    .cuerpo-titulo{
         text-align: center;
         padding: 6px;
         font-size: 18px;
     }
 
-    .tarjeta__imglist{
+    .imglist{
         font-size: 12px;
     }
 

@@ -18,7 +18,7 @@
     grid-template-rows: repeat(2, 1fr);
     grid-row-gap: 50px;
 
-    .seccion__tarjeta{
+    .seccion-tarjeta{
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -29,11 +29,11 @@
         font-family: 'Raleway',sans-serif;
         background-color: white;
 
-        .tarjeta__cuerpo--centrar{
+        .cuerpo-centrar{
             align-self: center;
         }
 
-        .tarjeta__cuerpo--titulo{
+        .cuerpo-titulo{
             text-align: center;
             padding: 10px;
             font-size: 24px;
@@ -81,7 +81,7 @@
 
 @media only screen and (max-width:1040px){
     .seccion__cat{
-        .seccion__tarjeta{
+        .seccion-tarjeta{
             flex-direction: column;
             width: 550px;
             height: 700px;
@@ -91,7 +91,7 @@
 
 @media only screen and (max-width:876px){
     .seccion__cat{
-        .seccion__tarjeta{
+        .seccion-tarjeta{
             height: 700px;
             width: 500px;
         }
@@ -100,17 +100,17 @@
 
 @media only screen and (max-width:512px){
     .seccion__cat{
-        .seccion__tarjeta{
+        .seccion-tarjeta{
             height: 680px;
             width: 400px;
             
-            .tarjeta__cuerpo--titulo{
+            .cuerpo-titulo{
                 font-size: 20px;
             }
         }
 
 
-        .seccion__img--dimension{
+        .img-dimension{
             align-self: center;
             width: 300px;
             height: 280px;
@@ -121,11 +121,11 @@
 @media only screen and (max-width:424px){
     .seccion__cat{
         
-        .seccion__tarjeta{
+        .seccion-tarjeta{
             width: 300px;
             height: 550px;       
 
-            .tarjeta__cuerpo--titulo{
+            .cuerpo-titulo{
                 font-size: 18px;
             }
 
@@ -134,7 +134,7 @@
             }
         }
 
-        .seccion__img--dimension{
+        .img-dimension{
             align-self: center;
             width: 250px;
             height: 250px;
